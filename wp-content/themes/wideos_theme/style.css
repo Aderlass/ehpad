@@ -1,0 +1,349 @@
+/*
+Theme Name: Thème Le prieuré de la Fensch
+Author: Arfmat Studio
+Author URI: http://www.arfmat.fr/
+Description: thème spécifique du site.
+Version: 0.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wideos-theme
+*/
+
+/* 
+ * ==============================================
+ * 
+ * CSS RESET de eric Meyer
+ * http://meyerweb.com/eric/tools/css/reset/ 
+ * v2.0 | 20110126
+ * License: none (public domain)
+ * 
+ * ==============================================
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 
+ * ==============================================
+ * 
+ * début du css : les balises html structurantes (pour une meilleure lisibilité du texte)
+ * http://www.grafikart.fr/tutoriels/html-css/typography-298
+ * 
+ * ==============================================
+*/
+@font-face {
+    font-family: 'amazenormal';
+    src: url('font/amazr___2-webfont.eot');
+    src: url('font/amazr___2-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('font/amazr___2-webfont.svg#amazenormal') format('svg'),
+         url('font/amazr___2-webfont.woff') format('woff'),
+         url('font/amazr___2-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	margin: 20px;
+	font-family: "PT Sans", Arial, Helvetica, "sans-serif";
+	font-size: 16px;
+	line-height: 1.5em;
+	background-size: 1.5em 1.5em;
+	background-position: 0 -5px;
+	background-color: #faf4f2;
+	color: #800224;
+}
+
+p,ul,ol,blockquote {margin-bottom: 1.5em; line-height: 1.5em; text-align: justify;}
+h1,h2,h3,h4,h5,h6 {
+	margin-bottom: 24px; 
+	color: #444; 
+	width: 880px;
+	font-family: 'amazenormal';
+	-webkit-text-stroke: 0.5px #84092B;
+	-webkit-transform: rotate(-0.0000000001deg);
+}
+h1 {font-size: 1.5em;}
+h2 {font-size: 1.325em;}
+h3 {font-size: 1.25em;}
+h4 {font-size: 1.125em;}
+h5,h6 {font-size: 1em;}
+
+ul,ol {margin-left: 20px;}
+ul {list-style: circle inside; overflow: hidden;}
+ul ul,ol ul {list-style: disc; margin-bottom: 0px;}
+ol {list-style: decimal; overflow: hidden;}
+ol ol,ul ol {list-style: lower-roman; margin-bottom: 0px;}
+
+strong {
+	color: #800224;
+	font-weight: bold;
+}
+
+blockquote {
+	margin: 0 60px;
+	border-left: 5px solid #590219;
+	padding-left: 15px;
+	font-style: italic;
+	overflow: hidden;
+	margin-bottom: 1.5em;
+}
+blocquote p {margin-bottom: 0px;}
+blocquote strong {
+	display: block;
+	text-align: right;
+	font-family: "PT Sans", Arial, Helvetica, "sans-serif";
+	font-style: normal;
+}
+blocquote strong:before {
+	content: '&mdash;'
+}
+blocquote em {
+	display: block;
+	text-align: right;
+	font-family: "PT Sans", Arial, Helvetica, "sans-serif";
+	font-style: normal;
+}
+blocquote em:before {
+	content: '&mdash;'
+}
+
+a {color: #0031fa; text-decoration: underline;}
+a:hover {color: #9a00fa; text-decoration: underline;}
+
+img {display: inline;}
+img.alignleft {
+	float: left;
+	margin-right: 20px;
+}
+img.aligncenter {
+	display: block;
+	margin: 0px auto;
+}
+img.alignright {
+	float: right;
+	margin-left: 20px;
+}
+
+
+/* 
+ * ==============================================
+ * 
+ * Balises structurantes HTML5-CSS3
+ * 
+ * ==============================================
+*/
+body {margin: 0; padding: 0; width: 100%; min-width: 1000px;}
+.bg-body {background: url("img/bg-contenu.jpg") center 72px no-repeat scroll transparent;}
+
+header {width: 907px; height: 225px; position: relative; margin-left: auto; margin-right: auto; background: url("img/bg_header.png") 0 0 no-repeat scroll transparent;}
+hgroup h1 {
+	bottom: 78px; 
+	font-family: 'amazenormal';
+	color: #84092B; 
+	font-size: 2.7em; 
+	line-height: 1.5em; 
+	position: absolute; 
+	right: 16px; 
+	text-align: right; 
+	width: 500px;
+}
+header .newsletter {position: absolute; top: 0px; left: 908px;}
+header .newsletter a .btn {color: #7d001f; text-decoration: none; text-align: none; font-size: 0.8em; line-height: 1.5em; /*position: fixed;*/ /*text-indent: -999999999px;*/ width: 36px;/*width: 130px;*/ height: 110px; /*padding-left: 43px;*/ background: url("img/btn_newsletter3.gif") 0 0  no-repeat scroll transparent;}
+header .newsletter a .btn:hover {text-decoration: underline;}
+header .plaquette {}
+header .plaquette a .btn {color: #7d001f; text-decoration: none; text-align: none; font-size: 0.8em; line-height: 1.5em; position: absolute; top: 106px; left: 12px; /*width: 130px;*/ height: 36px; padding-left: 43px; padding-top: 8px; background: url("img/icone_download.png") 0 0  no-repeat scroll transparent;}
+header .plaquette a .btn:hover {text-decoration: underline;}
+nav a {color: #542a0b; text-decoration: none;}
+nav a:hover {color: #84092B; text-decoration: none;}
+nav .current_page_item a:active {color: #84092B; font-weight: bold; text-decoration: none;}
+#contenu {width: 907px; margin-left: auto; margin-right: auto;}
+#contenu ul {
+	list-style-position: inside;
+	list-style-image: url(img/puce.png);
+	list-style-type: circle;
+	overflow: inherit;
+}
+#contenu ul li {
+	margin-bottom: 1.5em;
+}
+#contenu .taille-texte {color: #999999; font-size: 0.9em; margin-top: 1.5em; text-align: center; width: 110px; height: 1.5em; float: right; position: relative; z-index: 1000;}
+#contenu .taille-texte .text-bigger {width: 40px; height: 18px; background: url("img/text-size-bigger.png") center -18px  no-repeat scroll transparent; float: left; margin-right: 7px;}
+#contenu .taille-texte .text-bigger:hover {background: url("img/text-size-bigger.png") no-repeat scroll center 0px transparent;}
+#contenu .taille-texte .text-smaller {width: 40px; height: 18px; background: url("img/text-size-smaller.png") center -18px  no-repeat scroll transparent; float: left;}
+#contenu .taille-texte .text-smaller:hover {background: url("img/text-size-smaller.png") center 0 no-repeat scroll transparent;}
+#contenu section {width: 880px; margin-left: auto; margin-right: auto; margin-top: 2em;}
+article {margin-top: 2.5em;}
+article h2 {
+	color: #84092B; 
+	font-family: 'amazenormal';
+	font-size: 2.9em; 
+	line-height: 1em;
+}
+footer {width: 907px; height: 136px; position: relative; margin-left: auto; margin-right: auto; margin-top: 30px; background: url("img/bg_footer.png") 0 0 no-repeat scroll transparent;}
+footer .newsletter {position: absolute; width: 142px; height: 33px; top: 25px; left: 14px;}
+footer .newsletter a .btn {text-align: center; line-height: 1.9em; color: #fff; text-decoration: none; width: 142px; height: 33px; background: url("img/btn-newsletter.png") 0px -33px no-repeat scroll transparent;}
+footer .newsletter a .btn:hover {color: #800224; font-weight: bold; text-decoration: underline; background: url("img/btn-newsletter.png") 0px 0px no-repeat scroll transparent;}
+
+
+/* 
+ * ==============================================
+ * 
+ * LE MENU PRINCIPAL DU SITE : wp_nav_menu
+ * 
+ * ==============================================
+*/
+nav {
+	line-height: 3em;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	/*font-family: 'Montserrat Alternates', sans-serif;*/
+}
+nav .menu-menu-principal-container {
+	/*float: right;*/
+	margin: 0 0 0 20px;
+}
+nav ul {
+	padding: 0;
+	margin: 0;
+}
+nav ul li {
+	float: left;
+	list-style: none;
+	line-height: 2.7em;
+	/*margin: 0 25px;*/
+	margin: 0 20px;
+	/*opacity: 0.7;*/
+	background: url("img/logo-entier.png") bottom right no-repeat scroll transparent;
+	/*-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;*/
+	/*-webkit-text-stroke: 0.5px #542A0B;
+	-webkit-transform: rotate(-0.0000000001deg);*/
+	-webkit-transition:background-position 1s ease;
+	-moz-transition:background-position 1s ease;
+	-ms-transition:background-position 1s ease;
+	-o-transition:background-position 1s ease;
+	transition:background-position 1s ease;
+	font-family: Arial, Helvetica, sans-serif;
+}
+nav ul li:hover {
+	opacity: 1;
+	/*-webkit-text-stroke: 0.5px #84092B;
+	-webkit-transform: rotate(-0.0000000001deg);*/
+	background-position: -170px bottom;
+}
+nav ul li.current-menu-item {
+	opacity: 1;
+}
+nav ul li.current-menu-item a {
+	color: #84092B; 
+	font-weight: bold; 
+	text-decoration: none;
+	/*-webkit-text-stroke: 0;*/
+	/*-webkit-transform: rotate(-0.0000000001deg);*/
+}
+
+
+/* 
+ * ==============================================
+ * 
+ * DIAPORAMAS
+ * 
+ * ==============================================
+*/
+
+#meteor-slideshowbienvenue, #meteor-slideshowrecrutement, #meteor-slideshowcontexte, #meteor-slideshowfensch {
+	float: right;
+	border: 3px solid #fff;
+	border-radius: 10px 10px 10px 10px;
+	margin-left: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+#meteor-slideshowequipe, #meteor-slideshownews, #meteor-slideshowmissions {
+	float: left;
+	border: 3px solid #fff;
+	border-radius: 10px 10px 10px 10px;
+	margin-right: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.meteor-slides .mslide img {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+
+/* 
+ * ==============================================
+ * 
+ * TELECHARGEMENT
+ * 
+ * ==============================================
+*/
+.download_template {
+	/*color: #cc0033;*/
+	color: #800224;
+	text-decoration: underline;
+}
+
+
+
+/* 
+ * ==============================================
+ * 
+ * PAGE HOME
+ * 
+ * ==============================================
+*/
+.intro_video {
+	width: 900px;
+	margin: 20px auto 0;
+	text-align: center;
+}
